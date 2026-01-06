@@ -1,0 +1,19 @@
+[project]
+name = "mlb-data-pipeline"
+version = "0.1.0"
+description = "MLB data pipeline using Airflow, Spark, and Databricks"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "apache-airflow>=2.7.0",
+    "pybaseball>=2.2.0",
+    "databricks-sql-connector>=3.0.0",
+    "pandas>=2.0.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "ruff",
+]
